@@ -1,0 +1,27 @@
+.button {
+    box-sizing: border-box;
+    width: 327px;
+    height: 54px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-primary {
+    background: #627BFF;
+    color: white;
+}
+
+.button-secondary {
+    background: white;
+    border: 2px solid #627BFF;
+    color: #627BFF;
+}
+
+/*-------- Mobile [<640px] --------*/
+
+
+
+/*-------- Desktop [>640px] --------*/
+

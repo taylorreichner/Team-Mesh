@@ -1,0 +1,34 @@
+.tab {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tab-active {
+    color: #627BFF;
+}
+
+.tab-active:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #627BFF;
+    border-radius: 32px;
+}
+
+.tab-inactive {
+    color: #707070;
+}
+
+
+/*-------- Mobile [<640px] --------*/
+
+
+
+/*-------- Desktop [>640px] --------*/
+

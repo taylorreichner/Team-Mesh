@@ -1,0 +1,32 @@
+.event-card {
+    box-sizing: border-box;
+    width: 327px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px 24px;
+    background: white;
+    box-shadow: 0px 6px 10px #DDE9F5;
+}
+
+.event-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.event-card-icons {
+    display: flex;
+    width: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+/*-------- Mobile [<640px] --------*/
+
+
+
+/*-------- Desktop [>640px] --------*/
+

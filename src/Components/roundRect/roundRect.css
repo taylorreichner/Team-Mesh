@@ -1,0 +1,22 @@
+.round-rect {
+    width: 375px;
+    height: 706px;
+    border-top-left-radius: 50% 20px;
+    border-top-right-radius: 50% 20px;
+}
+
+.rect-blue {
+    background: #F5F8FD;
+}
+
+.rect-white {
+    background: white;
+}
+
+
+/*-------- Mobile [<640px] --------*/
+
+
+
+/*-------- Desktop [>640px] --------*/
+

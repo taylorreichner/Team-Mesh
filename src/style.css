@@ -1,0 +1,96 @@
+/*-------- Color Styles --------*/
+
+/* Blue */
+.blue-primary {
+    color: #627BFF;
+}
+.blue-secondary {
+    color: #CADAE9;
+}
+.blue-tertiary {
+    color: #F5F8FD;
+}
+.blue-link {
+    color: #4C65E9;
+}
+
+/* Monochrome */
+.black {
+    color: black;
+}
+.grey {
+    color: #707070;
+}
+.white {
+    color: white;
+}
+
+/* Orange */
+.orange-primary {
+    color: #EB705B;
+}
+.orange-secondary {
+    color: #FFA161;
+}
+.orange-tertiary {
+    color: #FFC774;
+}
+
+/* Accent */
+.green-accent {
+    color: #72A065;
+}
+
+
+/*-------- Text Styles --------*/
+
+/* Body */
+body {
+    font-family: 'Poppins';
+    color: black;
+}
+
+/* Title */
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+/* Sub-Title */
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    margin: 0;
+}
+
+/* Event Card Title */
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+}
+
+/* Buttons */
+h4 {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+}
+
+/* General */
+p {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}

@@ -1,0 +1,58 @@
+.input-field-line {
+    position: absolute;
+    width: 325px;
+    height: 62px;
+}
+
+/* .input-field-box {
+    position: absolute;
+    width: 325px;
+    height: 120px;
+} */
+
+label {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: 5%;
+    padding: 0 0.2em;
+    background: white;
+}
+
+input {
+    position: absolute;
+    z-index: 0;
+    left: 0%;
+    right: 0%;
+    top: 22%;
+    bottom: 0%;
+    padding: 18px;
+    border: 1px solid #000000;
+    border-radius: 14px;
+}
+
+input[type="text"] {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    color: black;
+}
+
+::placeholder {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    color: #707070;
+}
+
+
+/*-------- Mobile [<640px] --------*/
+
+
+
+/*-------- Desktop [>640px] --------*/
+

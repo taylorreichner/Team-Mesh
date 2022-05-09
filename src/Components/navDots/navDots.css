@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    gap: 12px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 32px;
+    background: #CADAE9;
+}
+.dash {
+    width: 24px;
+    height: 10px;
+    border-radius: 32px;
+    background: #627BFF;
+}
+
+
+/*-------- Mobile [<640px] --------*/
+
+
+
+/*-------- Desktop [>640px] --------*/
+
