@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './signIn.css'
 
-const LandingPage = () => {
+
+const Onboarding = () => {
  
   
     return (
@@ -15,4 +15,4 @@ const LandingPage = () => {
 
 
 
-export default LandingPage;
+export default Onboarding;

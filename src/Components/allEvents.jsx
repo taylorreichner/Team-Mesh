@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import SingleEvent from './singleEvent';
+import SingleEvent from './singleEvent'
 
 const EventList = ({ events }) => {
    
@@ -21,17 +20,7 @@ const EventList = ({ events }) => {
         
     )}
 
-    EventList.propTypes = {
-        events: PropTypes.arrayOf(
-            PropTypes.shape({
-                id: PropTypes.string,
-                title: PropTypes.string,
-                url: PropTypes.string,
-                date: PropTypes.string,
-                host: PropTypes.string,
-            })
-        )
-    }
+    
 
 export default EventList;
 
