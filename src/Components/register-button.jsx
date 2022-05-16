@@ -1,19 +1,19 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
-const SignupButton = () => {
+const RegisterButton = () => {
   const { loginWithRedirect } = useAuth0();
   return (
     <button
       onClick={() =>
         loginWithRedirect({
-          screen_hint: 'signup',
+          screen_hint: 'register',
         })
       }
     >
-      Sign Up
+      Register
     </button>
   );
 };
 
-export default SignupButton;
+export default RegisterButton;

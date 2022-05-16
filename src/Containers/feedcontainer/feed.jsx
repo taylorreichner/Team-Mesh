@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react';
-import EventList from '../Components/feed/allEvents';
-import { fetchEvents } from '../Services/eventsApi';
+import EventList from '../../Components/explore/allEvents.jsx'
+import { fetchEvents } from '../../Services/eventsApi';
 
 const Feed = () => {
     const [events, setEvents] = useState([])
@@ -17,6 +17,7 @@ const Feed = () => {
     return (
         <>
         <EventList events={events}/>
+        <h1>feed</h1>
         </>
     )
 

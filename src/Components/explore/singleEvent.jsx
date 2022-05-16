@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../eventCard/eventCard.css'
+import '../css/eventCard.css'
 
 
 const SingleEvent = ({id ,title, url, date, host}) => {
