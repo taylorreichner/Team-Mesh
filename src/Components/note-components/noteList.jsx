@@ -1,11 +1,11 @@
 import React from 'react';
-import SingleEventWithNote from './singleEventWithNote';
+import NoteCard from './noteCard';
 
-const AllEventsWithNotes = ({ events }) => {
+const NoteList = ({ events }) => {
    
     const eventItems = events.map(event => (
         <li key={event.id}>
-            <SingleEventWithNote {...event} />
+            <NoteCard {...event} />
         </li>
     ))
       //  console.log(events, 'events')
@@ -14,12 +14,7 @@ const AllEventsWithNotes = ({ events }) => {
     return (
         <ul aria-label="event">
             {eventItems}
-            
         </ul>
-
-        
     )}
 
-    
-
-export default AllEventsWithNotes;
+export default NoteList;

@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../eventCard/eventCard.css'
+import '../css/eventCard.css'
 
-
-const SingleEventWithNote = ({id ,title, url, date, host, note}) => {
+const NoteCard = ({id ,title, url, date, host, note}) => {
    
-   
-
    return (
    <div>
        <Link to={`/eventnote/${id}`}>
@@ -25,11 +22,7 @@ const SingleEventWithNote = ({id ,title, url, date, host, note}) => {
         </div>
         </Link>
     </div>
-
    )
- 
-   
-
 }
 
-export default SingleEventWithNote;
+export default NoteCard;

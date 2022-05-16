@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchEventsById } from '../Services/eventsApi';
+import { fetchEventsById } from '../../Services/eventsApi';
 
-const DetailEvent = () => {
+const DetailEmpty = () => {
   const [event, setEvent] = useState([]);
   const { id } = useParams();
   const [title, setTitle] = useState('')
@@ -80,4 +80,4 @@ const DetailEvent = () => {
   );
 };
 
-export default DetailEvent;
+export default DetailEmpty;

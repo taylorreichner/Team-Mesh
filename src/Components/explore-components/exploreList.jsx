@@ -1,11 +1,11 @@
 import React from 'react';
-import SingleEvent from './singleEvent'
+import ExploreCard from './exploreCard'
 
-const EventList = ({ events }) => {
+const ExploreList = ({ events }) => {
    
-    const eventItems = events.map(event => (
+    const exploreItems = events.map(event => (
         <li key={event.id}>
-            <SingleEvent {...event} />
+            <ExploreCard {...event} />
         </li>
     ))
       //  console.log(events, 'events')
@@ -13,15 +13,10 @@ const EventList = ({ events }) => {
         
     return (
         <ul aria-label="event">
-            {eventItems}
-            
+            {exploreItems}
         </ul>
-
-        
     )}
 
-    
-
-export default EventList;
+export default ExploreList;
 
 

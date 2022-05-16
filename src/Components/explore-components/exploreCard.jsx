@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom';
 import '../css/eventCard.css'
 
 
-const SingleEvent = ({id ,title, url, date, host}) => {
+const ExploreCard = ({id ,title, url, date, host}) => {
    
-   
-
    return (
    <div>
        <Link to={`/${id}`}>
@@ -26,9 +24,6 @@ const SingleEvent = ({id ,title, url, date, host}) => {
     </div>
 
    )
- 
-   
-
 }
 
-export default SingleEvent;
+export default ExploreCard;

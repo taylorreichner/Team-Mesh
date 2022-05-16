@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchNoteEventsById } from '../Services/eventsApi';
+import { fetchNoteEventsById } from '../../Services/eventsApi';
 
-const DetailNote = () => {
+const DetailFilled = () => {
   const [event, setEvent] = useState([]);
   const { id } = useParams();
   
@@ -42,4 +42,4 @@ const DetailNote = () => {
   );
 };
 
-export default DetailNote;
+export default DetailFilled;
