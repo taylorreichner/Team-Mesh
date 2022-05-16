@@ -27,7 +27,7 @@ const DetailNote = () => {
              <p className="grey">{event.host}</p>
              <p className="grey">{event.date}</p>
              <p className="grey">{event.url}</p>
-             <div>{event.note}fsda</div>
+             <div>{event.note}</div>
 
 
 
