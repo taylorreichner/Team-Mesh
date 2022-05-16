@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from 'react';
-import EventList from '../Components/allEvents';
+import EventList from '../Components/feed/allEvents';
 import { fetchEvents } from '../Services/eventsApi';
 
 const Feed = () => {

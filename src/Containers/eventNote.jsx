@@ -1,15 +1,19 @@
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import { fetchNoteEvents } from '../Services/eventsApi';
+import AllEventsWithNotes from '../Components/eventswithnotes/allEventsWithNote';
 
 const EventNote = () => {
     
+    const [events, setEvents] = useState([])
     
-    
-
+    useEffect(() => {
+        fetchNoteEvents()
+        .then(setEvents)
+    }, []);
  
     return (
         <>
-        <h1>Event Note</h1>
+        <AllEventsWithNotes events={events} />
         </>
     )
 
