@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../style.css'
 import './splash.css'
-import '../../Components/roundRect.css'
+import '../../Components/css/roundRect.css'
 import MeshSplash from '../../assets/splash/splash-vector.svg'
 import Logo from '../../assets/icon-logo-54.png'
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Components/eventCard.css'
+import '../Components/css/eventCard.css'
 
 const SingleEvent = ({id, title, url, date, host}) => {
    

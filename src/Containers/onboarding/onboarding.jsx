@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../style.css'
-import '../../Components/button.css'
-import '../../Components/roundRect.css'
+import '../../Components/css/button.css'
+import '../../Components/css/roundRect.css'
 import './onboarding.css'
 
 
