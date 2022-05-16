@@ -1,0 +1,51 @@
+.auth-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.auth-logo {
+    width: 48px;
+    height: 48px;
+}
+
+.auth-img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.auth-description {
+    position: absolute;
+    margin: 0 24px;
+    top: 10.5%;
+    text-align: center;
+}
+
+.register-button {
+    position: absolute;
+    bottom: 0;
+    margin: 152px 24px;
+    width: 210px;
+}
+
+.signin-button {
+    position: absolute;
+    bottom: 0;
+    margin: 78px 24px;
+    width: 210px;
+}
+
+.auth-rect {
+    height: 67.5vh;
+}
+
+.background {
+    position: absolute;
+    background-color: #F5F8FD;
+    z-index: -2;
+    width: 100vh;
+    height: 100vh;
+}
