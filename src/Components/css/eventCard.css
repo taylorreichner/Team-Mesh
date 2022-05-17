@@ -8,6 +8,7 @@
     padding: 22px 24px;
     background: white;
     box-shadow: 0px 6px 10px #DDE9F5;
+    margin: 0  24px;
 }
 
 .event-card-info {
@@ -22,6 +23,8 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 /*-------- Mobile [<640px] --------*/
