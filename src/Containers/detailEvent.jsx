@@ -53,7 +53,7 @@ const DetailEvent = () => {
              <p className="grey">{event.date}</p>
              <p className="grey">{event.url}</p>
              
-
+    
             <form onSubmit={createNewUserEvent}>
         <span>
           <textarea placeholder="I met Tina" onChange={(e) => setNote(e.target.value)}/>
