@@ -1,4 +1,38 @@
-.test {
-    color: brown;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.feed-title {
+    position: relative;
+    top: 86px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed-rect {
+    height: 74vh;
+}
+
+.feed-tabs {
+    position: relative;
+    height: fit-content;
+    top: 102px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 52px;
+    transform: translateY(50%);
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.active-tab {
+    color: #627BFF;
+}
+
+.inactive-tab {
+    color: #707070;
 }
