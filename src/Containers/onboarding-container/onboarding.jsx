@@ -4,7 +4,6 @@ import '../../Components/css/button.css'
 import '../../Components/css/roundRect.css'
 import './onboarding.css'
 
-
 import WelcomeImg from '../../assets/onboarding/onboarding-welcome.png'
 // import ExploreImg from '../../assets/onboarding/onboarding-explore.png'
 // import NotesImg from '../../assets/onboarding/onboarding-notes.png'
@@ -27,11 +26,15 @@ const Onboarding = () => {
             Explore Slide
             <div>
                 <img src={ExploreImg} alt="Explore" className="slide-img" />
+                <h2 className="onboarding-title">Explore events</h2>
+                <p className='grey'>Mesh curates online developer, designer, and product manager events fit for your needs</p>
             </div>
 
             Notes Slide
             <div>
                 <img src={NotesImg} alt="Notes" className="slide-img" />
+                <h2 className="onboarding-title">Take notes</h2>
+                <p className='grey'>Keep track of what you learn and who you meet at industry events</p>
             </div>
         */}
             
