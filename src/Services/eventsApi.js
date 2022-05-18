@@ -16,10 +16,10 @@ export const fetchEventsById = async (id) => {
     return result
 }
 
-export const fetchNoteEvents = async () => {
-    const res = await fetch('http://localhost:3001/api/v1/userevents/all')
+export const fetchNotes = async (id) => {
+    const res = await fetch(`http://localhost:3001/api/v1/userevents/all/${id}`)
     const result = await res.json()
-
+    console.log(result)
     return result
 }
 

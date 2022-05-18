@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navigate } from 'react-router';
+import { Redirect } from 'react-router';
 
 const SignUp = () => {
     const [email, setEmail] = useState('');
@@ -34,7 +34,7 @@ const SignUp = () => {
       };
     
       if (redirect) {
-        return <Navigate to={'/'} />;
+        return <Redirect to={'/'} />;
       }
       if (emailErr === 'email invalid') {
         setEmailErr('Sorry that email is taken!');

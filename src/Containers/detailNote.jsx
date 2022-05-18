@@ -33,6 +33,7 @@ const DetailNote = () => {
 
          </div>
          <div className="event-card-icons">
+          
              <div>hi</div>
              <div>hi</div>
          </div>

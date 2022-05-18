@@ -9,7 +9,7 @@ const SingleEvent = ({id ,title, url, date, host}) => {
 
    return (
    <div>
-       <Link to={`/${id}`}>
+       <Link to={`/feed/${id}`}>
         <div className="event-card">
             <div className="event-card-info">
                 <h3>{title}</h3>
@@ -19,6 +19,7 @@ const SingleEvent = ({id ,title, url, date, host}) => {
             </div>
             <div className="event-card-icons">
                 <div>hi</div>
+              
                 <div>hi</div>
             </div>
         </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchEventsById } from '../Services/eventsApi';
 
-const DetailEvent = () => {
+const DetailEvent = ({userId}) => {
   const [event, setEvent] = useState([]);
   const { id } = useParams();
   const [title, setTitle] = useState('')
@@ -10,6 +10,7 @@ const DetailEvent = () => {
   const [date, setDate] = useState('')
   const [host, setHost] = useState('')
   const [note, setNote] = useState('')
+  
   
 
   const createNewUserEvent = async (e) => {
@@ -22,14 +23,15 @@ const DetailEvent = () => {
               url,
               date,
               host,
-              note
+              note,
+              linkedUser: userId
               
             })
         })
         
   }
 
- 
+ console.log(userId)
 
   useEffect(() => {
     
@@ -52,6 +54,7 @@ const DetailEvent = () => {
              <p className="grey">{event.host}</p>
              <p className="grey">{event.date}</p>
              <p className="grey">{event.url}</p>
+
              
     
             <form onSubmit={createNewUserEvent}>
