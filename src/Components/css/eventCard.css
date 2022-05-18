@@ -11,6 +11,16 @@
     margin: 0  24px;
 }
 
+.event-card h3 {
+    max-width: 248px;
+}
+
+.event-card p {
+    max-width: 248px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .event-card-info {
     display: flex;
     flex-direction: column;
