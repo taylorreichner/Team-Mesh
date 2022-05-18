@@ -3,6 +3,7 @@ import '../../style.css'
 import '../../Components/css/button.css'
 import '../../Components/css/backButton.css'
 import '../../Components/css/rect.css'
+import '../../Components/css/navDots.css'
 import './onboarding.css'
 
 import WelcomeImg from '../../assets/onboarding/onboarding-welcome.png'
@@ -42,6 +43,11 @@ const Onboarding = () => {
        
             
         </div>
+        <nav className="onboarding-dots">
+            <div class="dash"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </nav>
         <div className="rect round-rect rect-white rect-flip"> </div>
         <div className="skip-button">
             <h4>Skip</h4>

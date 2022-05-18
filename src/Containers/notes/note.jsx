@@ -16,7 +16,6 @@ const Note = () => {
         <NoteList events={events} />
         </>
     )
-
 }
 
 export default Note;
