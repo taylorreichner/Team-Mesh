@@ -15,7 +15,6 @@ const ExploreCard = ({id ,title, url, date, host}) => {
                 <h3>{title}</h3>
                 <p className="grey">{host}</p>
                 <p className="grey">{date}</p>
-                <p className="grey">{url}</p>
             </div>
             <div className="event-card-icons">
                 <img src={EditIcon} alt="Edit Icon"/>

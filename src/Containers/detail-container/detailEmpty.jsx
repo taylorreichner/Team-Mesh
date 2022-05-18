@@ -51,7 +51,6 @@ const DetailEmpty = () => {
             <h3>{event.title}</h3>
             <p className="grey">{event.host}</p>
             <p className="grey">{event.date}</p>
-            <p className="grey">{event.url}</p>
         </div>
       </div>
 
