@@ -52,9 +52,9 @@ const Onboarding = () => {
         <div className="skip-button">
             <h4>Skip</h4>
         </div>
-        <div className="button button-primary next-button ">
+        <button className="button-primary next-button ">
             <h4>Next</h4>
-        </div>
+        </button>
         <div className="background"></div>
         </>
     )
