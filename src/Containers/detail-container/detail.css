@@ -1,0 +1,25 @@
+.details-title {
+    position: relative;
+    top: 40px;
+}
+
+.details-card {
+    position: relative;
+    top: 124px;
+}
+
+button {
+    position: absolute;
+    bottom: 80px;
+}
+
+.details-notes-box {
+    position: absolute;
+    bottom: 200px;
+}
+
+.close-button {
+    position: absolute;
+    margin: 43px 24px;
+}
+

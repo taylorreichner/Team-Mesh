@@ -17,6 +17,13 @@
     text-align: center;
 }
 
+.onboarding-dots {
+    position: absolute;
+    bottom: 212px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .next-button {
     position: absolute;
     right: 0;

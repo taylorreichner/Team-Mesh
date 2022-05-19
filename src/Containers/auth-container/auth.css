@@ -24,18 +24,16 @@
     text-align: center;
 }
 
-.register-button {
+.button-1 {
     position: absolute;
     bottom: 0;
     margin: 152px 24px;
-    width: 210px;
 }
 
-.signin-button {
+.button-2 {
     position: absolute;
     bottom: 0;
     margin: 78px 24px;
-    width: 210px;
 }
 
 .auth-rect {

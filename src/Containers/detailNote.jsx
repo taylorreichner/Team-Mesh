@@ -16,7 +16,7 @@ const DetailNote = () => {
       
   }, [id]);
 
-  console.log(event)
+  
   
   return (
     <div>

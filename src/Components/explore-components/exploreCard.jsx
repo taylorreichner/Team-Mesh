@@ -2,34 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/eventCard.css'
 
+import EditIcon from '../../assets/icons/icon-edit-24.svg'
+import NotesIcon from '../../assets/icons/icon-notes-24-grey.svg'
 
-const SingleEvent = ({id ,title, url, date, host}) => {
+const ExploreCard = ({id ,title, url, date, host}) => {
    
-   
-
    return (
    <div>
-       <Link to={`/feed/${id}`}>
+       <Link to={`/explore/${id}`}>
         <div className="event-card">
             <div className="event-card-info">
                 <h3>{title}</h3>
                 <p className="grey">{host}</p>
                 <p className="grey">{date}</p>
-                <p className="grey">{url}</p>
             </div>
             <div className="event-card-icons">
-                <div>hi</div>
-              
-                <div>hi</div>
+                <img src={EditIcon} alt="Edit Icon"/>
+                <img src={NotesIcon} alt="Notes Icon"/>
             </div>
         </div>
         </Link>
     </div>
-
    )
- 
-   
-
 }
 
-export default SingleEvent;
+export default ExploreCard;

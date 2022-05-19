@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { fetchNotes } from '../../Services/eventsApi';
-import AllEventsWithNotes from '../../Components/eventswithnotes/allEventsWithNote'
+import NoteList from '../../Components/note-components/noteList';
 
-
-
-const EventNote = ({userId}) => {
+const Note = ({userId}) => {
+    
     const [events, setEvents] = useState([])
     
 
@@ -12,16 +11,12 @@ const EventNote = ({userId}) => {
         fetchNotes(userId)
         .then(setEvents)
     }, [userId]);
-    console.log(userId)
+    
     return (
         <>
-         
-        <AllEventsWithNotes events={events} />
+        <NoteList events={events} />
         </>
     )
-
 }
 
-
-
-export default EventNote;
+export default Note;

@@ -1,0 +1,45 @@
+.register-signin-description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 140px 24px 0 24px;
+    top: 10.5%;
+    text-align: center;
+    gap: 36px;
+}
+
+.button-1 {
+    position: absolute;
+    bottom: 0;
+    margin: 152px 24px;
+}
+
+.button-2 {
+    position: absolute;
+    bottom: 0;
+    margin: 78px 24px;
+}
+
+.input-1 {
+    position: relative;
+    margin-top: 70px;
+}
+
+.input-2 {
+    position: relative;
+    margin-top: 30px;
+}
+
+.register-signin-rect {
+    height: 81.3vh;
+}
+
+.switch-auth {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    bottom: 152px;
+    justify-content: center;
+    width: 100%;
+}

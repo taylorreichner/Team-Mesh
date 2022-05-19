@@ -1,14 +1,27 @@
 import React, { useState } from 'react';
 import './App.css';
-import Splash from './Containers/splash/splash';
-import Onboarding from './Containers/onboarding/onboarding';
-import Feed from './Containers/feedcontainer/feed'
+import Splash from './Containers/splash-container/splash';
+import Onboarding from './Containers/onboarding-container/onboarding';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
-import DetailEvent from './Containers/detailEvent';
-import DetailNote from './Containers/detailNote';
-import EventNote from './Containers/notes/notes';
+
+
+
+
+
 import SignUp from './Containers/registration/signUp';
 import LogIn from './Containers/registration/logIn';
+import Auth from './Containers/auth-container/auth';
+
+
+
+import Explore from './Containers/feed-container/explore'
+import DetailEmpty from './Containers/detail-container/detailEmpty';
+import DetailFilled from './Containers/detail-container/detailFilled';
+import Note from './Containers/notes/note'
+// import Register from './Containers/register'
+// import Signin from './Containers/signin'
+
+
 
 
 function App() {
@@ -61,17 +74,44 @@ function App() {
 
     <Router>
       <Switch>
-        <Route exact path={'/splash'} element={<Splash />}/>
+        <Route exact path={'/splash'} component={Splash}/>
         <Route exact path={'/onboarding'} component={Onboarding} />
         <Route exact path={'/signup'} component={SignUp} />
+        <Route exact path={'/auth'} component={Auth} />
+        <AuthRoute exact path='/explore' component={Explore} user={user} />
+        <AuthRoute exact path='/note' component={Note} userId={userId} user={user}/>
+        <AuthRoute path='/explore/:id' component={DetailEmpty} userId={userId} user={user}/>
         
         
-        <AuthRoute exact path='/feed' component={Feed} user={user} />
-        <AuthRoute path='/feed/:id' component={DetailEvent} userId={userId} user={user}/>
 
         
-        <AuthRoute exact path='/notes' component={EventNote} userId={userId} user={user}/>
-        <AuthRoute path='/notes/:id' component={DetailNote} user={user} />
+        <AuthRoute path='/note/:id' component={DetailFilled} user={user} />
+
+
+
+{/* <Route exact path={'/register'} element={<Register />} />
+        <Route exact path={'/signin'} element={<Signin />} /> */}
+      
+
+
+       {/* <Route exact path={'/explore'} element={<Explore />}/> 
+        <Route exact path={'/note/:id'} element={<DetailFilled />} />
+       
+       <Route exact path={'/:id'} element={<DetailEmpty />} />
+       <Route exact path={'/note'} element={<Note />} />
+
+       import Feed from './Containers/feedcontainer/feed'
+import DetailEvent from './Containers/detailEvent';
+import DetailNote from './Containers/detailNote';
+import EventNote from './Containers/notes/notes';
+       
+       
+       */}
+
+
+
+
+
         
         
         <Route exact path={'/'} render={(props) => <LogIn {...props} setLoading={setLoading} />}/>
