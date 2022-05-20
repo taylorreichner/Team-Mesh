@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { fetchNoteEvents } from '../../Services/eventsApi';
+import { fetchNotes } from '../../Services/eventsApi';
 import NoteList from '../../Components/note-components/noteList';
 
-const Note = () => {
+const Note = ({userId}) => {
     
     const [events, setEvents] = useState([])
     
+
     useEffect(() => {
-        fetchNoteEvents()
+        fetchNotes(userId)
         .then(setEvents)
-    }, []);
- 
+    }, [userId]);
+    
     return (
         <>
         <NoteList events={events} />

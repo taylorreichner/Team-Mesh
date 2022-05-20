@@ -36,3 +36,9 @@
 .inactive-tab {
     color: #707070;
 }
+
+.explore-feed {
+    position: relative;
+    top: 150px;
+    right: 25px;
+}

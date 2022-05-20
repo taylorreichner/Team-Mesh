@@ -1,18 +1,18 @@
 import React from 'react';
 import NoteCard from './noteCard';
+import './notelistcss.css'
 
-const NoteList = ({ events }) => {
+const NoteList = ({ noteEvents }) => {
    
-    const eventItems = events.map(event => (
+    const eventItems = noteEvents.map(event => (
         <li key={event.id}>
             <NoteCard {...event} />
         </li>
     ))
-      //  console.log(events, 'events')
-      //  console.log(eventItems, 'eventitems')
+      
         
     return (
-        <ul aria-label="event">
+        <ul className='note-list' aria-label="event">
             {eventItems}
         </ul>
     )}
