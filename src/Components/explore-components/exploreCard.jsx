@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../css/eventCard.css'
 
 import EditIcon from '../../assets/icons/icon-edit-24.svg'
-import NotesIcon from '../../assets/icons/icon-notes-24-grey.svg'
+
 
 const ExploreCard = ({id ,title, url, date, host}) => {
    
