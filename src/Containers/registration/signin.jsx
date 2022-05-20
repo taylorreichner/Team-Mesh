@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import './auth-register-signin.css'
 
-import '../Components/css/backButton.css'
+import '../../Components/css/backButton.css'
 
-import BackButton from '../assets/icons/icon-back-24.svg'
+import BackButton from '../../assets/icons/icon-back-24.svg'
 
 
 const Signin = ({setLoading}) => {
@@ -53,18 +53,18 @@ const Signin = ({setLoading}) => {
         <>
         <img src={BackButton} alt="Back Button" className='back-button' />
         <div className="register-signin-description">
-            <h2 register-signin-title>Welcome back!</h2>
+            <h2 className='register-signin-title'>Welcome back!</h2>
             <p className="grey">Sign in to continue learning and growing your professional network</p>
         </div>
         <form onSubmit={submit}>
-        <div class="input-field-line input-1">
+        <div className="input-field-line input-1">
             <label className="input-line-label"><p>Email</p></label>
             <input onChange={(e) => setEmail(e.target.value)} placeholder="Enter your name" type="text"></input>
         </div>
 
-        <div class="input-field-line input-2">
+        <div className="input-field-line input-2">
             <label className="input-line-label"><p>Password</p></label>
-            <input onChange={(e) => setPassword(e.target.value)} placeholder="Enter your name" type="text"></input>
+            <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="Enter your name"></input>
         </div>
         
         <div className="switch-auth">

@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/eventCard.css'
+import EditIcon from '../../assets/icons/icon-edit-24.svg'
+
 
 const NoteCard = ({id ,title, url, date, host, note}) => {
    
+    // <img src={NotesIcon} alt="Notes Icon"/> 
    return (
    <div>
-       <Link to={`/note/${id}`}>
         <div className="event-card">
             <div className="event-card-info">
                 <h3>{title}</h3>
@@ -16,12 +18,12 @@ const NoteCard = ({id ,title, url, date, host, note}) => {
                 
             </div>
             <div className="event-card-icons">
-                <div>hi</div>
+       <Link to={`/note/${id}`}>
+            <img src={EditIcon} alt="Edit Icon"/>
+        </Link>
               
-                <div>hi</div>
             </div>
         </div>
-        </Link>
     </div>
    )
 }

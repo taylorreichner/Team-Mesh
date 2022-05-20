@@ -4,8 +4,9 @@ import { fetchEventsById } from '../../Services/eventsApi';
 import '../../style.css'
 import '../../Components/css/inputField.css'
 import '../detail-container/detail.css'
-
 import CloseIcon from '../../assets/icons/icon-close-21.svg'
+import { Link } from 'react-router-dom';
+
 
 const DetailEmpty = ({userId}) => {
   const [event, setEvent] = useState([]);
@@ -43,10 +44,16 @@ const DetailEmpty = ({userId}) => {
       
   }, [id, event.title, event.url, event.date, event.host]);
 
+  
+
   return (
     <div>
+      <Link to={'/explore'}>
+      
       <img src={CloseIcon} alt="Close Icon" className="close-button" />
+      
       <h4 className="details-title">Event Notes</h4>
+      </Link>
       <div className="event-card details-card">
         <div className="event-card-info">
             <h3>{event.title}</h3>
@@ -59,7 +66,7 @@ const DetailEmpty = ({userId}) => {
       {/* <span>
         <textarea placeholder="Enter your event notes (Contacts, LinkedIn’s, etc.)" onChange={(e) => setNote(e.target.value)}/>
       </span> */}
-      <div class="input-field-box details-notes-box">
+      <div className="input-field-box details-notes-box">
         <label className="input-box-label"><p>Event Notes</p></label>
         <textarea placeholder="Enter your event notes (Contacts, LinkedIn’s, etc.)" onChange={(e) => setNote(e.target.value)}>
         </textarea>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ExploreCard from './exploreCard'
+import './exploreList.css'
 
 const ExploreList = ({ events }) => {
    
@@ -12,7 +13,7 @@ const ExploreList = ({ events }) => {
       //  console.log(eventItems, 'eventitems')
         
     return (
-        <ul aria-label="event">
+        <ul className='explore-list' aria-label="event">
             {exploreItems}
         </ul>
     )}

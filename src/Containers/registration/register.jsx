@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Redirect } from 'react-router';
 import './auth-register-signin.css'
 
-import '../Components/css/backButton.css'
+import '../../Components/css/backButton.css'
 
-import BackButton from '../assets/icons/icon-back-24.svg'
+import BackButton from '../../assets/icons/icon-back-24.svg'
 
 
 const Register = () => {
@@ -53,17 +53,17 @@ const Register = () => {
         <>
         <img src={BackButton} alt="Back Button" className='back-button' />
         <div className="register-signin-description">
-            <h2 register-signin-title>Nice to meet you!</h2>
+            <h2 className='register-signin-title'>Nice to meet you!</h2>
             <p className="grey">Register for curated events and grow your professional network</p>
         </div>
 
         <form onSubmit={submit}>
-        <div class="input-field-line input-1">
+        <div className="input-field-line input-1">
             <label className="input-line-label"><p>Email</p></label>
             <input onChange={(e) => setEmail(e.target.value)} placeholder="Enter your name" type="text"></input>
         </div>
 
-        <div class="input-field-line input-2">
+        <div className="input-field-line input-2">
             <label className="input-line-label"><p>Password</p></label>
             <input onChange={(e) => setPassword(e.target.value)} placeholder="Enter your name" type="text"></input>
         </div>

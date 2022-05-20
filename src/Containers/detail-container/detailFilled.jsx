@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchNoteEventsById } from '../../Services/eventsApi';
-
+import { Link } from 'react-router-dom';
 import CloseIcon from '../../assets/icons/icon-close-21.svg'
 
 const DetailFilled = () => {
@@ -19,8 +19,10 @@ const DetailFilled = () => {
   
   return (
     <div>
+      <Link to={'/explore'}>
       <img src={CloseIcon} alt="Close Icon" className="close-button" />
       <h4 className="details-title">Event Notes</h4>
+      </Link>
       <div className="event-card details-card">
           <div className="event-card-info">
               <h3>{event.title}</h3>
