@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 
 
 
-import SignUp from './Containers/registration/signUp';
+//import SignUp from './Containers/registration/signUp';
 import LogIn from './Containers/registration/logIn';
 import Auth from './Containers/auth-container/auth';
 
@@ -18,8 +18,8 @@ import Explore from './Containers/feed-container/explore'
 import DetailEmpty from './Containers/detail-container/detailEmpty';
 import DetailFilled from './Containers/detail-container/detailFilled';
 import Note from './Containers/notes/note'
-// import Register from './Containers/register'
-// import Signin from './Containers/signin'
+import Register from './Containers/register';
+import Signin from './Containers/signin'
 
 
 
@@ -75,17 +75,14 @@ function App() {
     <Router>
       <Switch>
         <Route exact path={'/splash'} component={Splash}/>
-        <Route exact path={'/onboarding'} component={Onboarding} />
-        <Route exact path={'/signup'} component={SignUp} />
+        <Route exact path={'/'} component={Onboarding} />
+        <Route exact path={'/register'} component={Register} />
         <Route exact path={'/auth'} component={Auth} />
         <AuthRoute exact path='/explore' component={Explore} user={user} />
         <AuthRoute exact path='/note' component={Note} userId={userId} user={user}/>
         <AuthRoute path='/explore/:id' component={DetailEmpty} userId={userId} user={user}/>
-        
-        
-
-        
         <AuthRoute path='/note/:id' component={DetailFilled} user={user} />
+        <Route exact path={'/signin'} render={(props) => <Signin {...props} setLoading={setLoading} />}/>
 
 
 
@@ -114,7 +111,6 @@ import EventNote from './Containers/notes/notes';
 
         
         
-        <Route exact path={'/'} render={(props) => <LogIn {...props} setLoading={setLoading} />}/>
       </Switch>
     </Router>
   );
